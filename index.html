@@ -14,35 +14,55 @@
     />
     <link
       rel="stylesheet"
-      href="https://code.getmdl.io/1.3.0/material.pink-red.min.css"
+      href="https://code.getmdl.io/1.3.0/material.pink-orange.min.css"
     />
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
     <link rel="manifest" href="site.webmanifest" />
-    <title>My first webpage, with JavaScript</title>
+    <title>User Input, with a JS</title>
   </head>
   <body>
     <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+    <script src="./js/script.js"></script>
     <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
       <header class="mdl-layout__header">
         <div class="mdl-layout__header-row">
-          <span class="mdl-layout-title">Hello, World! with JS</span>
+          <span class="mdl-layout-title">Address, with a JS file</span>
         </div>
       </header>
       <main class="mdl-layout__content">
-        <div class="page-content" style="padding-left: 100px">
-          Click the button...
-        </div>
+        <h3>Please enter the following:</h3>
+          <!-- Numeric Textfield -->
+          <form action="#">
+            <p>Street Number</p>
+            <div class="mdl-textfield mdl-js-textfield">
+              <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="street-number">
+              <label class="mdl-textfield__label" for="age-entered">Number here ...</label>
+              <span class="mdl-textfield__error">Input is not a number!</span>
+            </div>
+          </form>
+           <!-- Simple Textfield -->
+           <form action="#">
+            <p>Street Name</p>
+            <div class="mdl-textfield mdl-js-textfield">
+              <input class="mdl-textfield__input" type="text" id="street-name">
+              <label class="mdl-textfield__label" for="first-name">Name here ...</label>
+            </div>
+          </form>
         <!-- Colored raised button -->
         <button
           class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored"
-          onclick="myButtonClicked()"
+          onclick="enterButtonClicked()"
         >
-          Click me!
+          Enter
         </button>
         <br />
-        <img src="./images/flag-of-Canada.png" height="300" width="200" />
+        <div id="user-info">
+          <div id="address"></div>
+        </div>
+        <br>
+        <img src="./images/street.jpeg" alt="street" height="200" width="200"
       </main>
     </div>
   </body>
