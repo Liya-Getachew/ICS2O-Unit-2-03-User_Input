@@ -33,23 +33,32 @@
       </header>
       <main class="mdl-layout__content">
         <h3>Please enter the following:</h3>
-          <!-- Numeric Textfield -->
-          <form action="#">
-            <p>Street Number</p>
-            <div class="mdl-textfield mdl-js-textfield">
-              <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="street-number">
-              <label class="mdl-textfield__label" for="age-entered">Number here ...</label>
-              <span class="mdl-textfield__error">Input is not a number!</span>
-            </div>
-          </form>
-           <!-- Simple Textfield -->
-           <form action="#">
-            <p>Street Name</p>
-            <div class="mdl-textfield mdl-js-textfield">
-              <input class="mdl-textfield__input" type="text" id="street-name">
-              <label class="mdl-textfield__label" for="first-name">Name here ...</label>
-            </div>
-          </form>
+        <!-- Numeric Textfield -->
+        <form action="#">
+          <p>Street Number</p>
+          <div class="mdl-textfield mdl-js-textfield">
+            <input
+              class="mdl-textfield__input"
+              type="text"
+              pattern="-?[0-9]*(\.[0-9]+)?"
+              id="street-number"
+            />
+            <label class="mdl-textfield__label" for="age-entered"
+              >Number here ...</label
+            >
+            <span class="mdl-textfield__error">Input is not a number!</span>
+          </div>
+        </form>
+        <!-- Simple Textfield -->
+        <form action="#">
+          <p>Street Name</p>
+          <div class="mdl-textfield mdl-js-textfield">
+            <input class="mdl-textfield__input" type="text" id="street-name" />
+            <label class="mdl-textfield__label" for="first-name"
+              >Name here ...</label
+            >
+          </div>
+        </form>
         <!-- Colored raised button -->
         <button
           class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored"
@@ -61,7 +70,7 @@
         <div id="user-info">
           <div id="address"></div>
         </div>
-        <br>
+        <br />
         <img src="./images/street.jpeg" alt="street" height="200" width="200"
       </main>
     </div>

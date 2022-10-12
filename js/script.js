@@ -8,10 +8,11 @@
  * This function gets users street number and street name and shows it back to user.
  */
 function enterButtonClicked() {
-    // input
-    const streetNumber = document.getElementById("street-number").value
-    const streetName = parseInt(document.getElementById("street-name").value)
+  // input
+  const streetNumber = document.getElementById("street-number").value
+  const streetName = parseInt(document.getElementById("street-name").value)
 
-    // output
-    document.getElementById("address").innerHTML = "Your address is: " + streetNumber + streetName + "."
+  // output
+  document.getElementById("address").innerHTML =
+    "Your address is: " + streetNumber + streetName + "."
 }
